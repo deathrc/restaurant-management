@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:background="@drawable/textview_border">
+    
+	<ImageView
+        android:id="@+id/ivDishPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+       android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"  
+        android:adjustViewBounds="true"
+        
+        />
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dip"
+	    android:layout_weight="1"
+	    android:layout_marginTop="10dip"
+	    >
+	<TextView 
+	    android:id="@+id/tvDishName"
+	    android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:background="@drawable/textview_border"
+	    />
+	<TextView 
+	    android:id="@+id/tvDishId"
+	    android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+       
+	    />
+    
+	<TextView 
+	    android:id="@+id/tvDishSales"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/tvDishName"
+        android:layout_toRightOf="@id/ivDishPhoto"
+        android:textSize="15sp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/tvDishPrice"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/tvDishSales"
+        android:layout_toRightOf="@id/ivDishPhoto"
+        android:textSize="15sp"
+	    />
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dip"
+	    android:layout_weight="1"
+	    android:layout_marginTop="10dip"
+	    android:layout_marginBottom="10dip"
+	    >
+	<Button 
+	    android:id="@+id/btnDetails"
+	    android:layout_width="90dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="5dip"
+        android:textSize="15sp"
+        android:text="详情查看"
+        android:gravity="center"
+        android:background="@drawable/circle_edge_button"
+	    />
+	
+	<Button 
+	    android:id="@+id/btnEdit"
+	    android:layout_width="90dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:textSize="15sp"
+        android:text="编辑"
+        android:gravity="center"
+        android:background="@drawable/circle_edge_button"
+	    />
+	</LinearLayout>
+</LinearLayout>

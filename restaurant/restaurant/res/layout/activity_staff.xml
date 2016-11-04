@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StaffActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/text1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/text2"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/lvStaff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:clipToPadding="false" >
+        </ListView>
+    </TableLayout>
+
+    <!-- .........................标签....................... -->
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:drawableLeft="@drawable/waiter2"
+                android:onClick="waiterSelected"
+                android:text="@string/waiter"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:drawableLeft="@drawable/cook"
+                android:onClick="chefSelected"
+                android:text="@string/cook"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/textview_border"
+                android:drawableLeft="@drawable/vacuum_cleaner"
+                android:onClick="busboySelected"
+                android:text="@string/cleaner"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

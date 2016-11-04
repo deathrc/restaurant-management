@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    tools:context=".EvaluationActivity" >
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp" >
+
+        <com.example.restaurant.util.LuckyPan
+            android:id="@+id/lucky"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="30dp" >
+        </com.example.restaurant.util.LuckyPan>
+
+        <ImageView
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/start" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/iv_evaluation1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.我们的服务："
+                android:textColor="#763c39"
+                android:textSize="22sp" />
+
+            <RatingBar
+                android:id="@+id/rb_evaluate1"
+                style="@style/myRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.我们的菜品："
+                android:textColor="#763c39"
+                android:textSize="22sp" />
+
+            <RatingBar
+                android:id="@+id/rb_evaluate2"
+                style="@style/myRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.我们的环境："
+                    android:textColor="#763c39"
+                    android:textSize="22sp" />
+
+                <RatingBar
+                    android:id="@+id/rb_evaluate3"
+                    style="@style/myRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="117dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.您的建议："
+                    android:textColor="#763c39"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/et_advice"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="left" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_eva_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

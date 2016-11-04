@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dishlist_border"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:scaleType="fitStart"
+            android:src="@drawable/waiter1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:text="如果您有任何需要可以点击按钮呼叫服务员"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="70dp"
+                android:text="您的服务已提交到系统，服务员将为你服务请稍等..."
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_selector"
+                android:text="呼叫服务"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

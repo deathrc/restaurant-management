@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RestaurantActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border" >
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/calender_alt"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/startdate" />
+
+        <EditText
+            android:id="@+id/startdate"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/text3"
+            android:gravity="left"
+            android:inputType="none" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:layout_below="@id/text3"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:drawableLeft="@drawable/calender_alt"
+            android:gravity="center"
+            android:paddingBottom="15dip"
+            android:text="@string/enddate" />
+
+        <EditText
+            android:id="@+id/enddate"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_below="@id/startdate"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/text4"
+            android:gravity="left"
+            android:inputType="none"
+            android:paddingBottom="15dip" >
+        </EditText>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:checked="false"
+            android:text="@string/month"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbSeason"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:checked="false"
+            android:text="@string/season"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbYear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_border"
+            android:checked="false"
+            android:text="@string/year"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQuery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:drawableStart="@drawable/find"
+        android:gravity="center"
+        android:text="@string/check"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border" >
+
+        <TextView
+            android:id="@+id/turnover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.0"
+            android:lines="5"
+            android:textColor="#7082EA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvEvaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/turnover"
+            android:layout_below="@id/turnover"
+            android:layout_toEndOf="@id/turnover"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.0"
+            android:text="服务评分："
+            android:textColor="#7082EA"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@+id/starEvaluation"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvEvaluation"
+            android:layout_toRightOf="@id/tvEvaluation"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:paddingTop="3dip"
+            android:rating="0"
+            android:stepSize="0.5" />
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/textview_border"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="15dip" >
+    </com.github.mikephil.charting.charts.PieChart>
+
+</LinearLayout>

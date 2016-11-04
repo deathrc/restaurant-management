@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.restaurant.activity.LoginActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/app_picture" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_xiaoguo"
+        android:ems="10"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="请输入账号" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_xiaoguo"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="请输入密码"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_shape"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/btn_shape"
+        android:textSize="11sp"
+        android:text="选座" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+            android:id="@+id/tv_no_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="今日暂无订单"
+            android:visibility="gone" />
+    <com.example.restaurant.view.RefreshableView
+        android:id="@+id/refreshable_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ListView
+            android:id="@+id/lv_chef2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </com.example.restaurant.view.RefreshableView>
+    
+        
+
+</RelativeLayout>

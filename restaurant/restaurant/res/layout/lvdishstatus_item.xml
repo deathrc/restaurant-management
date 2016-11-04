@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/dish_listitem_border"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_dishstatus_dishid"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="#cc6633"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_dishstatus_timer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:gravity="center"
+        android:textColor="#ff6600"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_dishstatus_urge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/button_selector"
+        android:text="催单"
+        android:textSize="18sp" />
+
+</LinearLayout>

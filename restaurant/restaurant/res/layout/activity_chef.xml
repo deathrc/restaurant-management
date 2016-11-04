@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.restaurant.activity.ChefActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_chef"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+    
+    <RadioGroup
+        android:id="@+id/rg_chef"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" 
+        android:orientation="horizontal">
+
+        <RadioButton 
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/chef_bottom1"
+            android:gravity="center_horizontal"
+            android:checked="true"
+            android:text="做菜"
+            android:textSize="12dp"
+            android:textColor="@drawable/chef_bottom_text"/>
+        <RadioButton 
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/chef_bottom2"
+            android:gravity="center_horizontal"
+            android:text="订单"
+            android:textSize="12dp"
+            android:textColor="@drawable/chef_bottom_text"/>
+        <RadioButton 
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/chef_bottom3"
+            android:gravity="center_horizontal"
+            android:text="余量"
+            android:textSize="12dp"
+            android:textColor="@drawable/chef_bottom_text"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEC" >
+
+    <LinearLayout
+        android:id="@+id/ll_chef2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/chef2_shape"
+        android:orientation="vertical"
+        android:padding="5dp" 
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_chef2_orderid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单号：" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEC" />
+
+        <TextView
+            android:id="@+id/tv_chef2_tableid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="桌号：" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEC" />
+
+        <TextView
+            android:id="@+id/tv_chef2_waiter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="服务员：" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEC" />
+
+        <TextView
+            android:id="@+id/tv_chef2_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交时间：" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEC" />
+
+        <TextView
+            android:id="@+id/tv_chef2_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="菜肴数目：" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEC" />
+
+        <TextView
+            android:id="@+id/tv_chef2_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备注：" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#EEEEEC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView 
+                android:id="@+id/tv_chef2_sta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态："/>
+            
+            <TextView
+                android:id="@+id/tv_chef2_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_chef2_sta"
+                android:text="未完成"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="查看详情 >"
+                android:textColor="#3190E8" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

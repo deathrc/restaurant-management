@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/cirtab1" 
+          android:state_pressed="true"></item>
+    <item android:drawable="@drawable/cirtab2_pressed" ></item>
+    
+    <item android:drawable="@drawable/squtab1" 
+          android:state_pressed="true"></item>
+    <item android:drawable="@drawable/squtab2_pressed" ></item> 
+    
+    <item android:drawable="@drawable/tratab1" 
+          android:state_pressed="true"></item>
+    <item android:drawable="@drawable/tratab2_pressed" ></item>  
+</selector>

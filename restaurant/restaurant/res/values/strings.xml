@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">restaurant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_table">UserTableActivity</string>
+    <string name="table_instruction">	注：圆形为包厢，正方形为四人桌，长方形为六人桌(绿色代表可选)</string>
+    <string name="random_choose">随机选座</string>
+    <string name="for_sure_choose">确认选座</string>
+    <string name="kitchen">后厨</string>
+    <string name="wc">厕所</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_evaluation">EvaluationActivity</string>
+    <string name="title_activity_chef">ChefActivity</string>
+    <string name="title_activity_dishes_in_order">DishesInOrderActivity</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="title_activity_waiter">WaiterActivity</string>
+    <string name="staff">员工信息</string>
+    <string name="restaurant">经营情况</string>
+    <string name="dish">菜品管理</string>
+    <string name="change">公告通知</string>
+    <string name="text1">员工编号</string>
+    <string name="text2">员工信息</string>
+    <string name="title_activity_dish">DishActivity</string>
+    <string name="waiter">服务员</string>
+    <string name="cook">厨师</string>
+    <string name="cleaner">清洁工</string>
+    <string name="status">经营状况统计</string>
+    <string name="month">本月</string>
+    <string name="season">季度</string>
+    <string name="year">年度</string>
+    <string name="check">查询</string>
+    <string name="dishmanage">菜品管理</string>
+    <string name="startdate">起始日期:</string>
+    <string name="enddate">终止日期:</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_restaurant">RestaurantActivity</string>
+    <string name="title_activity_stuff">StuffActivity</string>
+    <string name="title_activity_cleaner">CleanerActivity</string>
+    <string name="title_activity_my_dishes">MyDishesActivity</string>
+
+</resources>

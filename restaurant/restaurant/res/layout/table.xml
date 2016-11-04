@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:baselineAligned="false"
+    android:clickable="false"
+    android:orientation="horizontal"
+    tools:context="com.example.table.table" >
+
+    <ImageView
+        android:id="@+id/ivTablePic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/table4" />
+
+    <TextView
+        android:id="@+id/tvTableId"
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="0.25"
+        android:background="@drawable/textview_border2"
+        android:gravity="center"
+        android:text="桌子编号NO."
+        android:textSize="13dip" />
+
+    <Button
+        android:id="@+id/btnOccupy"
+        android:layout_width="0dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="0.25"
+        android:text="待清洁" />
+
+    <LinearLayout
+        android:id="@+id/llOccupied"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已选择,清洁中" />
+
+        <Button
+            android:id="@+id/btnCleaned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认完成" />
+    </LinearLayout>
+
+</LinearLayout>
